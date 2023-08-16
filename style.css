@@ -1,0 +1,114 @@
+/*All the styling are provided almost with the same order of the html */
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+/* Header Design*/
+header{
+    background-color: #67595E;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 90px;
+    color: #EED6D3
+}
+header img{
+    margin-top: 10px;
+    width: 80px;
+}
+header h3{
+    margin: 0;
+    padding: 0;
+}
+header h2{
+    margin: 0;
+    padding: 0;
+}
+.header-text{
+    align-self: center;
+}
+/*design for main*/
+main{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 auto;
+}
+main h3{
+    color: rgb(44, 44, 44);
+}
+
+.radios-div{
+    border: 2px solid rgb(44, 44, 44);
+    border-radius: 8px;
+    border-bottom: 2px solid  rgb(44, 44, 44) ;
+    margin-top: -10px;
+}
+.radio{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    border-bottom: 2px solid rgb(44, 44, 44);
+}
+
+/*checkbox*/
+.checkbox-container label{
+    font-size: 14px;
+    width: 100%;
+    color: rgb(66, 65, 65);
+}
+
+/*Button design*/
+
+.get-btn{
+    background-color:#67595E ;
+    color: #EED6D3;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    align-self: center;
+    font-weight: 500;
+}
+
+
+.meme-image{
+    display: none; /*make its display to flex by js*/
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(255, 211, 218);
+    width: 350px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgb(247, 203, 210);
+}
+
+.meme-image img{
+    width: 320px;
+    height: 320px;
+    margin-top: 10%;
+    margin-bottom: 13%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgb(250, 208, 215);
+}
+
+
+
+.highlight{
+    background-color: #EED6D3;
+
+}
+
+
