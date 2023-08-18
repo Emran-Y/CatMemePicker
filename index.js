@@ -21,10 +21,9 @@ function getEmotionsArray(cats) {
   }
   return emotionsArray;
 }
-
+let el = ''
 function renderEmotions(cats) {
   const emotionsArray = getEmotionsArray(cats);
-  let el = '';
   for (let emotion of emotionsArray) {
     el += `
       <div class="radio">
@@ -57,16 +56,19 @@ function highlighter(e) {
 btnEl.addEventListener('click', function() {
   render(catsData);
   document.querySelector('.meme-image').style.display = 'flex';
-  checkboxContainer.innerHTML = '';
+  checkboxContainer.style.display ='none'
+  btnEl.style.marginTop = '20px'
 });
 
 // Listening for the memeContainer to be clicked to make the meme disappear and allow other selections without refreshing the page
 memeContainer.addEventListener('dblclick', function() {
   document.querySelector('.meme-image').style.display = 'none';
-  checkboxContainer.innerHTML = `<label for="gif-checkbox">Animated GIFs only</label>
-      <input type="checkbox" value="" name="" id="gif-checkbox">`;
+  checkboxContainer.style.display = 'block'
   btnEl.textContent = 'Get Image';
   btnEl.style.display = 'inline-block';
+  btnEl.style.marginTop = '0'
+  radiosDiv.innerHTML = '';
+  radiosDiv.innerHTML = el;
 });
 
 // To get the cats object that matches the selected radio or both the gif and the radio
